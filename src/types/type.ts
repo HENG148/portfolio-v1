@@ -35,7 +35,11 @@ export interface Tag {
 }
 export const slides: Slide[] = [
   { src: "/me.jpg", alt: "" },
-  { src: "/me(1).jpg", alt: ""},
+  { src: "/me(1).jpg", alt: "" },
+  { src: "/me(2).jpg", alt: "" },
+  { src: "/me(3).jpg", alt: "" },
+  // { src: "/me(2).jpg", alt: "" },
+  // { src: "/me(2).jpg", alt: ""},
 ]
 
 export const highlights: Highlight[] = [
@@ -102,8 +106,8 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Front-end",
     skills: [
-      "Web Development",
-      "React",
+      // "Web Development",
+      "React.js",
       "Next.js",
       "TypeScript",
       "Tailwind CSS",
@@ -117,7 +121,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Express.js", "REST", "PHP"],
+    skills: ["Node.js", "Express.js", "Python", "REST"],
   },
   {
     title: "DevOps",
@@ -135,9 +139,8 @@ export const skillCategories: SkillCategory[] = [
 
 
 
-
 {/*********************************/ }
-// Skills Type 
+// Contact Type 
 {/*********************************/ }
 
 export interface ContactInfo {

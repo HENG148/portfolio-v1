@@ -23,8 +23,8 @@ export default function EducationSection() {
   return (
     <section
       id="education"
-      className="w-full font-sans antialiased py-20 px-6 md:px-10 lg:px-16">
-      <div className="mx-auto max-w-7xl">
+      className="w-full font-sans antialiased">
+      <div className="mx-auto max-w-7xl py-20 px-6 md:px-10">
         <div className="mb-16 text-center">
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight text-white">
             Education

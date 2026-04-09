@@ -22,7 +22,7 @@ export const SidebarProfile = ({ collapsed }: { collapsed: boolean }) => (
         Rong Sokheng
       </p>
       <p className="mt-px whitespace-nowrap font-mono text-[12px] tracking-widest text-white">
-        web . UX/UI
+        Web . UX/UI
       </p>
     </ExpandOnly>
   </div>

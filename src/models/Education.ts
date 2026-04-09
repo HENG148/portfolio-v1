@@ -1,10 +1,7 @@
 import mongoose, { Document, Schema } from "mongoose";
+import { IEducationInput } from "../db/schema/education.schema";
 
-export interface IEducation extends Document {
-  title: string;
-  school: string;
-  year: string;
-}
+export interface IEducation extends Document, IEducationInput {}
 
 const EducationSchema: Schema = new Schema(
   {

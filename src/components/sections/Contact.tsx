@@ -6,9 +6,9 @@ export default function ContactSection() {
   return (
     <section
       id='contact'
-      className='w-full px-6 py-20 flex items-center justify-center'
+      className='max-w-7xl mx-auto w-full py-20 px-6'
     >
-      <div className=''>
+      <div className='grid grid-cols-1 lg:grid-cols-2'>
         <ContactDetails />
         <ContactForm />
       </div>

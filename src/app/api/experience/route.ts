@@ -1,4 +1,4 @@
-import connectDB from "@/src/lib/mongoose";
+import connectDB from "@/src/db/mongoose";
 import Experience from "@/src/models/Experience";
 import { NextRequest, NextResponse } from "next/server";
 

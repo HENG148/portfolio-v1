@@ -27,8 +27,9 @@ export default function AboutSection() {
   return(
     <section
       id="about"
+      className="max-w-7xl mx-auto py-20 px-6 md:px-10"
     >
-      <div className="mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-24 items-center">
         <motion.div
           variants={container}
           initial="hidden"

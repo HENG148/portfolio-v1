@@ -106,7 +106,7 @@ export default function TerminalWindow() {
   // const lastVisibleIndex = Math.max(...Array.from(visibleLines), -1);
 
   return (
-    <div className="w-full max-w-lg rounded-xl border border-white/10 bg-[#161616] shadow-2xl overflow-hidden">
+    <div className="w-full max-w-full rounded-xl border border-white/10 bg-[#161616] shadow-2xl overflow-hidden">
       <TrafficLights />
 
       <div className="px-5 py-5 min-h-30 w-full space-y-0.5">

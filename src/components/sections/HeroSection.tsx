@@ -6,8 +6,9 @@ export default function HeroSection() {
   return (
     <section
       id='home'
+      className='mx-auto max-w-7xl py-20 px-6 md:px-10'
     >
-      <div className='grid grid-cols-1 lg:grid-cols-2 items-center'>
+      <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-24 items-center'>
         <HeroContent
           title={
             <>

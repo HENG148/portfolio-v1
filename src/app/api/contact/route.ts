@@ -1,4 +1,4 @@
-import connectDB from "@/src/lib/mongoose";
+import connectDB from "@/src/db/mongoose";
 import { sendNotification } from "@/src/lib/Notify";
 import { rateLimit } from "@/src/lib/RateLimit";
 import Message from "@/src/models/Message";
