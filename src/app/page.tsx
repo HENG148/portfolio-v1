@@ -5,9 +5,10 @@ import EducationSection from "../components/sections/Education";
 import FeatureProject from "./projects/page";
 import SkillSection from "../components/sections/SkillSection";
 import ContactSection from "../components/sections/Contact";
-import BlogSection from "./blog/page";
 import Footer from "../components/Footer";
 import LatestPosts from "../components/LastPost";
+
+export const dynamic = "force-dynamic";
 
 export default function Home() {
   return (
