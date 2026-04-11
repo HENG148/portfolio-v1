@@ -2,6 +2,8 @@ import LatestPosts from '@/src/components/LastPost'
 import { BreadCrumb } from '@/src/components/ui/Breadcrump'
 import { Suspense } from 'react'
 
+export const dynamic = "force-dynamic"
+
 export default function BlogSection() {
   return (
     <section
