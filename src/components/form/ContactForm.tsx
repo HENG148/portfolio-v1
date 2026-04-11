@@ -97,15 +97,21 @@ export default function ContactForm() {
   return (
     <div className="w-full relative rounded-2xl border border-white/[0.07] bg-white/2 p-8 flex flex-col gap-6 overflow-hidden">
       {/* Subtle top-edge highlight */}
-      <div
+      {/* <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-2/3 h-px pointer-events-none"
         style={{
           background:
             "linear-gradient(90deg, transparent, rgba(255,255,255,0.12), transparent)",
         }}
+      /> */}
+      <div
+        className="
+          absolute top-0 left-1/2 -translate-x-1/2
+          w-2/3 h-px pointer-events-none
+          bg-[linear-gradient(90deg,transparent,rgba(255,255,255,0.12),transparent)]
+        "
       />
 
-      {/* Header */}
       <div className="space-y-1">
         <p className="text-[10px] tracking-[0.2em] uppercase text-white/30 font-medium">
           Get in touch

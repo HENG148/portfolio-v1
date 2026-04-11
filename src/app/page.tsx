@@ -6,6 +6,8 @@ import FeatureProject from "./projects/page";
 import SkillSection from "../components/sections/SkillSection";
 import ContactSection from "../components/sections/Contact";
 import BlogSection from "./blog/page";
+import Footer from "../components/Footer";
+import LatestPosts from "../components/LastPost";
 
 export default function Home() {
   return (
@@ -15,9 +17,11 @@ export default function Home() {
       <WorkExperience />
       <EducationSection />
       <FeatureProject />
-      <BlogSection />
+      {/* <BlogSection /> */}
+      <LatestPosts />
       <SkillSection />
       <ContactSection />
+      <Footer />
     </div>
   );
 }

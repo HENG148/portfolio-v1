@@ -26,7 +26,7 @@ function ImageCarousel({ slides }: { slides: Slide[] }) {
   }, [next]);
 
   return (
-    <div className="relative w-full overflow-hidden rounded-2xl bg-zinc-900 aspect-[4/3] group"> {/* aspect-[4/3] */}
+    <div className="relative w-full overflow-hidden rounded-2xl bg-zinc-900 aspect-4/3 group"> {/* aspect-[4/3] */}
       {slides.map((slide, idx) => (
         <div
           className={["absolute inset-0 transition-opacity duration-500 ease-in-out", idx === current ? "opacity-100" : "opacity-0"].join(" ")}
@@ -37,7 +37,7 @@ function ImageCarousel({ slides }: { slides: Slide[] }) {
             src={slide.src}
             alt={slide.alt}
             fill
-            sizes="100vw"
+            sizes="(max-width: 768px) 100vw, 50vw"
             className="object-cover"
             draggable={false}
             priority={idx === 0}

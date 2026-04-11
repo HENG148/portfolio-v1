@@ -44,7 +44,7 @@ function TagList({ tags, varaint = "default" }: TagListProps) {
 
 function Button({ children, variant = "primary", onClick }: ButtonProps) {
   const base =
-    "px-8 py-3.5 text-sm font-bold tracking-widest uppercase transition-colors duration-200";
+    "px-8 py-3.5 text-sm font-semibold tracking-widest uppercase rounded-full transition-colors duration-200";
 
   const variants = {
     primary: "bg-white text-black hover:bg-neutral-200",

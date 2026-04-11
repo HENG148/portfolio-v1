@@ -1,6 +1,5 @@
 import { Experience } from "../types/type";
-import { BriefcaseIcon } from "./icons/BriefcaseIcon";
-import { ZapIcon } from "./icons/ZapIcon";
+import { BriefcaseIcon, ZapIcon } from "./icons/svg";
 
 const BulletItem: React.FC<{ text: string }> = ({ text }) => (
   <li className="flex items-start gap-2.5 text-sm leading-relaxed text-neutral-400 transition-colors duration-200 group-hover:text-neutral-300">
@@ -31,8 +30,6 @@ const CardHeader: React.FC<{ experience: Experience }> = ({ experience }) => (
 
 const ExperienceCard: React.FC<{ experience: Experience }> = ({ experience }) => (
   <div className="group relative flex gap-6 pb-12 last:pb-9">
-
-    {/* Timeline */}
     <div className="relative flex flex-col items-center">
       <div className="relative z-10 mt-1 h-3 w-3 shrink-0">
         <div className="h-3 w-3 rounded-full border-neutral-500 bg-neutral-900 transition-colors duration-300 group-hover:border-white group-hover:bg-white" />

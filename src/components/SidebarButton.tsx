@@ -33,7 +33,7 @@ export function NavButton({
       animate={{ opacity: 1, x: 0 }}
       transition={{ delay: index * 0.2, duration: 0.3, ease: "easeOut" }}
       onClick={handleClick}
-      className={["group relative flex w-full items-center gap-4 px-3.5 py-2.5 bg-transparent border-none cursor-pointer font-mono text-[11.5px] tracking-[0.06em] transition-colors duration-100", isActive ? "text-[#e2ddd5]" : "text-[#3a3a38] hover:text-[#7a7a76]", collapsed ? "justify-center px-0" : ""].join("")}
+      className={["group relative flex w-full items-center gap-4 px-3.5 py-2.5 bg-transparent border-none cursor-pointer font-sans text-[11.5px] tracking-[0.06em] transition-colors duration-100", isActive ? "text-[#e2ddd5]" : "text-[#3a3a38] hover:text-[#7a7a76]", collapsed ? "justify-center px-0" : ""].join("")}
     >
       {isActive && (
         <motion.span

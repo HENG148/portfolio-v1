@@ -19,10 +19,10 @@ interface TerminalLineRowProps {
 const TERMINAL_LINES: TerminalLine[] = [
   { prefix: "$", text: "npm run dev", delay: 0 },
   { prefix: ">", text: "next dev - ready on http://localhost:3000", delay: 1200, dimmed: true },
-  { prefix: "$", text: "git commit -m 'build: ship portfolio'", delay: 2600 },
-  { prefix: ">", text: "[main abc123] 1 file changed, 200 insertions(+)", delay: 5000, dimmed: true },
-  { prefix: " $", text: "curl -I http://rongsokheng.com", delay: 7000 },
-  { prefix: ">", text: "HTTP/2 200", delay: 8000},
+  { prefix: "$", text: "git commit -m 'build: ship portfolio'", delay: 3800 },
+  { prefix: ">", text: "[main abc123] 1 file changed, 200 insertions(+)", delay: 6300, dimmed: true },
+  { prefix: " $", text: "curl -I http://rongsokheng.com", delay: 9000 },
+  { prefix: ">", text: "HTTP/2 200", delay: 11000},
 ];
 
 const TYPING_SPEED_MS = 45;
@@ -103,7 +103,6 @@ export default function TerminalWindow() {
   }, []);
 
   const lastVisibleIndex = visibleLines.size > 0 ? Math.max(...Array.from(visibleLines)) : -1;
-  // const lastVisibleIndex = Math.max(...Array.from(visibleLines), -1);
 
   return (
     <div className="w-full max-w-full rounded-xl border border-white/10 bg-[#161616] shadow-2xl overflow-hidden">

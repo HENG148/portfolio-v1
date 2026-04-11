@@ -18,7 +18,7 @@ export default function HeroSection() {
             </>
           }
           description="Welcome to my portfolio.  I'm Rong Sokheng, a Full-stack developer with a passion for building modern web and UX/UI experiences. I'm a quick learner and always looking for new challenges."
-          tags={["Web", "Mobile", "Startup"]}
+          tags={["Software", "Web", "Mobile", "UX / UI"]}
           actions={[
             { label: "View Projects", variant: "primary" },
             { label: "Contact Me", variant: "outline" },

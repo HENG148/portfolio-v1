@@ -35,11 +35,11 @@ export interface Tag {
 }
 export const slides: Slide[] = [
   { src: "/me.jpg", alt: "" },
-  { src: "/me(1).jpg", alt: "" },
-  { src: "/me(2).jpg", alt: "" },
-  { src: "/me(3).jpg", alt: "" },
+  // { src: "/me(1).jpg", alt: "" },
   // { src: "/me(2).jpg", alt: "" },
-  // { src: "/me(2).jpg", alt: ""},
+  { src: "/me(3).jpg", alt: "" },
+  { src: "/me(4).jpg", alt: "" },
+  { src: "/me(5).jpg", alt: ""},
 ]
 
 export const highlights: Highlight[] = [
@@ -49,9 +49,14 @@ export const highlights: Highlight[] = [
 ]
 
 export const tags: Tag[] = [
+  { label: "Software" },
   { label: "Web" },
   { label: "Mobile" },
-  { label: "UX / UI"}
+  { label: "UX / UI" },
+  { label: "Design" },
+  { label: "RUPP Graduated" },
+  { label: "Open freelance" },
+  { label: "Developer"}
 ]
 
 
@@ -106,7 +111,7 @@ export const skillCategories: SkillCategory[] = [
   {
     title: "Front-end",
     skills: [
-      // "Web Development",
+      "Web Development",
       "React.js",
       "Next.js",
       "TypeScript",
@@ -116,12 +121,12 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
   {
-    title: "Mobile",
-    skills: ["Dart"],
+    title: "Backend",
+    skills: ["Node.js", "Express.js", "Python", "REST API"],
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "Express.js", "Python", "REST"],
+    title: "Mobile",
+    skills: ["Dart"],
   },
   {
     title: "DevOps",
@@ -133,7 +138,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Design",
-    skills: ["UX / UI", "Figma"],
+    skills: ["UX / UI", "Figma", "Adobe"],
   },
 ]
 
@@ -158,4 +163,23 @@ export const contactInfo: ContactInfo = {
   linkedin: "https://www.linkedin.com/in/rong-sokheng-a20512258/",
   instagram: "https://www.instagram.com/__heng0_",
 };
- 
+
+// const details = [
+//   {
+//     icon: Mail,
+//     label: "Email",
+//     value: contactInfo.email,
+//     // href: `mailto:${contactInfo.email}`,
+//   },
+//   {
+//     icon: Phone,
+//     label: "Phone",
+//     value: contactInfo.phone,
+//     // href: `tel:${contactInfo.phone.replace(/\s/g, "")}`,
+//   },
+//   {
+//     icon: MapPin,
+//     label: "Location",
+//     value: "Phnom Penh, Cambodia",
+//   },
+// ];

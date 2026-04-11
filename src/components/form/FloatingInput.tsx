@@ -63,7 +63,6 @@ export default function FloatingInput({
         autoComplete="off"
       />
 
-      {/* Floating label */}
       <label
         htmlFor={name}
         onClick={() => inputRef.current?.focus()}
@@ -75,8 +74,7 @@ export default function FloatingInput({
       >
         {label}
       </label>
-
-      {/* Error message */}
+      
       {error && (
         <p className="mt-1.5 pl-1 text-[11px] text-red-400/80 leading-none">
           {error}

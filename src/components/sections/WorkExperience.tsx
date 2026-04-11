@@ -4,21 +4,7 @@ import { Experience } from "@/src/types/type"
 import { useEffect, useState } from "react"
 import { motion } from "framer-motion"
 import ExperienceCard from "../ExperienceCard"
-
-const SkeletonCard: React.FC = () => (
-  <div className="flex gap-6 pb-12 animate-pulse">
-    <div className="flex flex-col items-center">
-      <div className="h-3 w-3 rounded-full bg-neutral-700" />
-      <div className="mt-2 w-px flex-1 bg-neutral-800" />
-    </div>
-    <div className="flex-1 space-y-3">
-      <div className="h-4 w-1/3 rounded bg-neutral-800" />
-      <div className="h-3 w-1/4 rounded bg-neutral-800" />
-      <div className="h-3 w-full rounded bg-neutral-800" />
-      <div className="h-3 w-5/6 rounded bg-neutral-800" />
-    </div>
-  </div>
-)
+import { SkeletonCard } from "../icons/svg"
 
 export const WorkExperience: React.FC = () => {
   const [experience, setExperience] = useState<Experience[]>([])

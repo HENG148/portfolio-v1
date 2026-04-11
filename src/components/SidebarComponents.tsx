@@ -1,7 +1,9 @@
 import { PanelLeftClose, PanelLeftOpen } from "lucide-react";
 import { cn } from "../lib/cn";
-import { GridLogo } from "./icons/Logo";
-import { ExpandOnly, TrafficLights } from "./Primitive";
+// import {GridIcon} from '../components/icons/GraduateIcon'
+import { GridLogo } from "./icons/svg";
+import { ExpandOnly, TrafficLights } from "./Trafficelight";
+import Link from "next/link";
 
 export const SidebarHeader = ({ collapsed }: { collapsed: boolean }) => (
   <div className="flex items-center gap-2 h-11 px-3.5 border-b border-[#1a1a18]">
@@ -16,13 +18,17 @@ export const SidebarProfile = ({ collapsed }: { collapsed: boolean }) => (
   <div className={cn(
     "flex items-center border-b border-[#1a1a18]", collapsed ? "justify-center py-3.5 px-0":"gap-2.5 px-3.5 py-4"
   )}>
-    <div className="shrink-0 text-[#e2ddd5]"><GridLogo /></div>
+    <div className="shrink-0 text-[#e2ddd5]">
+      <Link href="/">
+        <GridLogo />
+      </Link>
+    </div>
     <ExpandOnly collapsed={collapsed}>
       <p className="whitespace-nowrap font-mono text-[17px] font-semibold tracking-[0.01em] text-[#e2ddd5]">
         Rong Sokheng
       </p>
-      <p className="mt-px whitespace-nowrap font-mono text-[12px] tracking-widest text-white">
-        Web . UX/UI
+      <p className="mt-px whitespace-nowrap font-sans text-[12px] tracking-widest text-white">
+        Software . Web . UX/UI
       </p>
     </ExpandOnly>
   </div>
@@ -34,7 +40,7 @@ export const SidebarFooter = ({ collapsed }: { collapsed: boolean }) => (
     className="flex items-center text-[13px] gap-1.5 border-t border-[#1a1a18] px-3.5 py-2.75"
   >
     <span className="text-white">$</span>
-    <span className="text-[#524f4f]">echo &quot;hello, world&quot;</span>
+    <span className="text-[#524f4f]">echo &quot;Hello, world!&quot;</span>
     <span className="inline-block h-3.25 w-1.5 bg-[#4d4d4b] animate-blink" />
   </ExpandOnly>
 );

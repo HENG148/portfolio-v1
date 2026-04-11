@@ -12,6 +12,10 @@
   }
 }
 
+@theme {
+  --font-primary: "Merriweather Sans", sans-serif;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

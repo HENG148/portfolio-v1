@@ -1,12 +1,12 @@
 'use client'
 
 import { SectionId } from "@/src/types/type";
-import { useSidebarCollapse } from "../functions/UseSidebarCollapse";
-import { useActiveSection } from "../functions/UseActiveSection";
+import { useSidebarCollapse } from "../hooks/UseSidebarCollapse";
+import { useActiveSection } from "../hooks/UseActiveSection";
 import { motion } from "framer-motion";
 import { SidebarFooter, SidebarHeader, SidebarProfile, SidebarToggle } from "../SidebarComponents";
 import { NAV_ITEMS } from "@/src/types/NavItem";
-import { NavButton } from "../NavButton";
+import { NavButton } from "../SidebarButton";
 
 interface SidebarProps {
   activeSection?: SectionId;

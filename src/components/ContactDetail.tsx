@@ -56,7 +56,6 @@ export default function ContactDetails() {
         </p>
       </div>
 
-      {/* Details */}
       <ul className="flex flex-col gap-5">
         {details.map((item) => (
           <li key={item.label}>
@@ -65,7 +64,6 @@ export default function ContactDetails() {
         ))}
       </ul>
 
-      {/* Socials */}
       <div className="flex items-center gap-3">
         {socials.map((item) => (
           <SocialButton key={item.label} {...item} />

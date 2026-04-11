@@ -26,7 +26,7 @@ export default function FloatingTextarea({
   const isFloated = focused || value.length > 0;
 
   return (
-    <div className="relative group" style={{ animationDelay: `${index * 80}ms` }}>
+    <div className={`relative group [animation-delay:${index * 80}ms`}>
       {/* Animated border glow */}
       <div
         className={`absolute inset-0 rounded-xl transition-opacity duration-500 pointer-events-none ${

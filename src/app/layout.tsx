@@ -33,7 +33,7 @@ export default function RootLayout({
     >
       <body className="bg-[#0d0d0d] flex h-screen overflow-hidden">
         <Sidebar />
-        <main className="flex-1 overflow-y-auto md:px-20">{children}</main>
+        <main className="flex-1 overflow-y-auto">{children}</main>
       </body>
     </html>
   );
