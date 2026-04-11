@@ -37,7 +37,6 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({ experience }) =>
       <div className="mt-2 w-px flex-1 bg-linear-to-b from-neutral-700 to-transparent" />
     </div>
 
-    {/* Content */}
     <div className="flex-1 pb-2">
       <CardHeader experience={experience} />
 

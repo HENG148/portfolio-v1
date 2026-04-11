@@ -89,7 +89,6 @@ export default function BlogCard({ post, featuredTags = [] }: BlogCardProps) {
           })}
         </ul>
 
-        {/* Arrow */}
         <span className="shrink-0 w-8 h-8 rounded-full border border-[#2a2a2a] flex items-center justify-center text-[#555] text-sm transition-all group-hover:border-white group-hover:bg-white group-hover:text-black">
           →
         </span>

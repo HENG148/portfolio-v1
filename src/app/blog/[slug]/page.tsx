@@ -48,7 +48,7 @@ function BlogContent() {
       </section>
 
       <section>
-        <h2 className="font-primary text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
+        <h2 className="font-sans text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
           Tech Stack Overview
         </h2>
         <div className="space-y-4">
@@ -94,9 +94,8 @@ function BlogContent() {
         </div>
       </section>
 
-      {/* 3. Project Structure */}
       <section>
-        <h2 className="font-serif text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
+        <h2 className="font-sans text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
           Project Structure
         </h2>
         <p className="mb-3">
@@ -129,9 +128,8 @@ function BlogContent() {
         </p>
       </section>
 
-      {/* 4. Features */}
       <section>
-        <h2 className="font-serif text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
+        <h2 className="font-sans text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
           Features of the Portfolio
         </h2>
         <ul className="space-y-3 list-none">
@@ -150,7 +148,6 @@ function BlogContent() {
         </ul>
       </section>
 
-      {/* 5. Challenges */}
       <section>
         <h2 className="font-sans text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
           Challenges I Faced
@@ -197,9 +194,8 @@ function BlogContent() {
         </div>
       </section>
 
-      {/* 6. What I Learned */}
       <section>
-        <h2 className="font-serif text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
+        <h2 className="font-sans text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
           What I Learned
         </h2>
         <ul className="space-y-3 list-none">
@@ -218,7 +214,7 @@ function BlogContent() {
       </section>
 
       <section>
-        <h2 className="font-serif text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
+        <h2 className="font-sans text-xl font-bold text-[#f0f0f0] mb-3 pb-2 border-b border-[#2a2a2a]">
           Conclusion
         </h2>
         <p>
@@ -261,14 +257,8 @@ export default async function BlogPostPage({ params }: PageProps) {
             <time className="text-[12px] text-[#888] font-mono tracking-widest">
               {formatDate(post.publishedAt)}
             </time>
-            {/* {post.readingTime && (
-              <span className="ml-auto text-[11px] font-mono px-2.5 py-0.5 rounded-full bg-[#252525] border border-[#383838] text-[#888]">
-                {post.readingTime} min read
-              </span>
-            )} */}
           </div>
 
-          {/* Author */}
           {post.author && (
             <div className="flex items-center gap-2 mb-5">
               <div className="w-8 h-8 rounded-full bg-[#252525] border border-[#3a3a3a] flex items-center justify-center text-[11px] font-mono font-semibold text-[#bbb]">
@@ -280,12 +270,10 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
           )}
 
-          {/* Title */}
           <h1 className="font-primary text-3xl md:text-4xl font-bold text-[#f0f0f0] leading-tight mb-4">
             {post.title}
           </h1>
 
-          {/* Excerpt */}
           <p className="text-[15px] text-[#888] leading-relaxed mb-6">
             {post.excerpt}
           </p>
