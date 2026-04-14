@@ -1,4 +1,5 @@
 import mongoose, { Document, Schema } from "mongoose";
+import { IExperienceInput } from "../db/schema/experience.schema";
 
 interface Bullet {
   text: string;
@@ -10,19 +11,14 @@ const BulletSchema = new Schema<Bullet>({
   },
 })
 
-export interface IExperience extends Document {
-  title: string;
-  company: string;
-  period: string;
-  bullets: Bullet[];
-}
+export interface IExperience extends IExperienceInput, Document {}
 
 const ExperienceSchema: Schema = new Schema(
   {
     title: { type: String, required: true },
     company: { type: String, required: true },
     period: { type: String, required: true},
-    bullets: [BulletSchema],
+    bullets: {type:[BulletSchema], default: []},
   },
   { timestamps: true }
 );

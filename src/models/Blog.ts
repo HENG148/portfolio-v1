@@ -1,16 +1,9 @@
-import mongoose, { Document, Model, Schema } from "mongoose";
+import mongoose, { Model, Schema } from "mongoose";
+import { IBlogInput } from "../db/schema/blog.schema";
 
-export interface IPost extends Document {
-  title: string;
-  excerpt: string;
-  tags: string[];
-  publishedAt: Date;
-  slug: string;
-  author?: string;
-  readingTime?: number;
-}
+export interface IBlog extends IBlogInput, mongoose.Document {}
 
-const PostSchema = new Schema<IPost>(
+const PostSchema = new Schema<IBlog>(
   {
     title: { type: String, required: true, trim: true },
     excerpt: { type: String, required: true, trim: true },
@@ -23,7 +16,7 @@ const PostSchema = new Schema<IPost>(
   { timestamps: true }
 );
 
-const Post: Model<IPost> =
-  mongoose.models.Post ?? mongoose.model<IPost>("Post", PostSchema);
+const Post: Model<IBlog> =
+  mongoose.models.Post ?? mongoose.model<IBlog>("Post", PostSchema);
 
 export default Post;
