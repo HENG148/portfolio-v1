@@ -1,6 +1,6 @@
-import{z} from 'zod'
+import { z } from 'zod';
 
-export const BlogZodSchema = z.object({
+export const PostZodSchema = z.object({
   title: z.string().min(1, "Title is required").trim(),
   excerpt: z.string().min(1, "Excerpt is required").trim(),
   tags: z.array(z.string()).default([]),
@@ -10,4 +10,4 @@ export const BlogZodSchema = z.object({
   readingTime: z.number().optional().default(3),
 })
 
-export type IBlogInput = z.infer<typeof BlogZodSchema>;
+export type IBlogInput = z.infer<typeof PostZodSchema>;
