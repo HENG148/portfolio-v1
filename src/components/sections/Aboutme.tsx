@@ -47,9 +47,8 @@ export default function AboutSection() {
             variants={fadeUp}
             className="text-zinc-400 text-base md:text-[1.05rem] leading-relaxed"
           >
-            I'm Rong Sokheng, an IT graduate from Royal University of Phnom Penh.
-            I specialize in Full-stack development using React, Next.js,
-            TypeScript, and Express.js to build scalable products.
+            My name is Rong Sokheng, an IT Full-Stack Developer and Computer Science graduate from the Royal University of Phnom Penh (RUPP). I specialize in building modern web applications using TypeScript, Next.js, Node.js, and databases like PostgreSQL and MongoDB.
+            I’m passionate about API design, and creating efficient, scalable systems. I enjoy solving real-world problems through code and continuously learning new technologies to improve my skills.
           </motion.p>
 
           <motion.ul variants={container} className="flex flex-col gap-3">

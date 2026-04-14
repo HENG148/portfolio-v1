@@ -44,7 +44,7 @@ export const slides: Slide[] = [
 
 export const highlights: Highlight[] = [
   { text: "Product mindset across web, mobile, and startups" },
-  { text: "Ship fast with quality: React, Next.js, Node" },
+  { text: "Ship fast with quality: React, Next.js, Node, Express.js" },
   { text: "UX / UI and performance focused" },
 ]
 
