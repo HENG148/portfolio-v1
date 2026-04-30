@@ -1,4 +1,4 @@
-import LatestPosts from '@/src/components/LastPost'
+import LatestPosts from '@/src/components/sections/LastPost'
 import { BreadCrumb } from '@/src/components/ui/Breadcrump'
 import { Suspense } from 'react'
 

@@ -50,19 +50,7 @@ export default function BlogCard({ post, featuredTags = [] }: BlogCardProps) {
         )} */}
       </div>
 
-      {/* {post.author && (
-        <div className="flex items-center gap-2 mb-4">
-          <div className="w-6 h-6 rounded-full bg-[#1a1a1a] border border-[#333] flex items-center justify-center text-[11px] font-mono font-medium text-[#aaa] shrink-0">
-            {getInitials(post.author)}
-          </div>
-          <span className="text-[12px] font-mono text-[#555]">
-            {post.author}
-            {post.category && <span className="text-[#333]"> · {post.category}</span>}
-          </span>
-        </div>
-      )} */}
-
-      <h2 className="font-sans text-[19px] font-bold leading-snug text-white mb-2.5">
+      <h2 className=" text-[19px] font-bold leading-snug text-white mb-2.5">
         {post.title}
       </h2>
       <p className="text-[13px] text-[#666] leading-relaxed mb-5">
@@ -79,8 +67,8 @@ export default function BlogCard({ post, featuredTags = [] }: BlogCardProps) {
                 key={tag}
                 className={
                   isFeatured
-                    ? "text-[10px] font-mono px-2.5 py-0.5 rounded-full bg-[#1a1a1a] border border-[#333] text-[#ccc]"
-                    : "text-[12px] font-mono px-2.5 py-0.5 rounded-full border border-[#2a2a2a] text-[#7e7171] transition-colors group-hover:border-[#333] group-hover:text-[#888]"
+                    ? "text-[10px] px-2.5 py-0.5 rounded-full bg-[#1a1a1a] border border-[#333] text-[#ccc]"
+                    : "text-[12px] px-2.5 py-0.5 rounded-full border border-[#2a2a2a] text-[#7e7171] transition-colors group-hover:border-[#333] group-hover:text-[#888]"
                 }
               >
                 {tag}

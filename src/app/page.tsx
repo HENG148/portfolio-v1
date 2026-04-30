@@ -6,7 +6,7 @@ import FeatureProject from "./projects/page";
 import SkillSection from "../components/sections/SkillSection";
 import ContactSection from "../components/sections/Contact";
 import Footer from "../components/sections/Footer";
-import LatestPosts from "../components/LastPost";
+import LatestPosts from "../components/sections/LastPost";
 
 export const dynamic = "force-dynamic";
 
@@ -18,7 +18,6 @@ export default function Home() {
       <WorkExperience />
       <EducationSection />
       <FeatureProject />
-      {/* <BlogSection /> */}
       <LatestPosts />
       <SkillSection />
       <ContactSection />

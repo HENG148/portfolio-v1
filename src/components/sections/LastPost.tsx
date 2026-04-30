@@ -1,7 +1,7 @@
 import Link from "next/link";
-import connectDB from "../db/mongoose";
-import Post, { IPost } from "../models/Blog";
-import BlogCard, { PostCardData } from "./BlogCard";
+import connectDB from "../../db/mongoose";
+import Post, { IPost } from "../../models/Blog";
+import BlogCard, { PostCardData } from "../BlogCard";
 
 const DISPLAY_LIMIT = 6;
 
@@ -39,7 +39,7 @@ export default async function LatestPosts() {
   return (
     <section
       id="blog"
-      className="max-w-7xl mx-auto px-6 py-20 md:px-10"
+      className="max-w-7xl mx-auto px-6 py-20"
     >
       <div>
         <div className="flex items-center justify-between mb-10">
